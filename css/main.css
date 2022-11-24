@@ -53,22 +53,23 @@ body {
     transform: translate(0, -50%);
 }
 
-.mainVisual {
+.mainSlide {
     position: relative;
     width: 1200px;
     height: 700px;
     margin: 0 auto;
-    background: url(../img/main01.jpg) no-repeat center center/cover;
 }
-
-.mainVisual .inner {
+.mainSlide .itm {
+    position: relative;
+}
+.mainSlide .itm .inner {
     position: absolute;
     top: 50%;
     left: 70%;
     transform: translate(-50%, -50%);
 }
 
-.mainVisual .inner h2 {
+.mainSlide .inner h2 {
     font-size: 50px;
     font-weight: 700;
     color: #fff;
@@ -76,12 +77,79 @@ body {
     margin: 0 0 35px 0;
 }
 
-.mainVisual .inner p {
+.mainSlide .inner p {
     font-size: 15px;
     font-weight: 300;
     color: #fff;
     line-height: 25px;
 }
+
+.mainSlide .itm {
+    height: 700px;
+}
+
+.mainSlide .itm01 {
+    background: url(../img/main_01.jpg) no-repeat center center/ cover;
+}
+
+.mainSlide .itm02 {
+    background: url(../img/main_02.jpg) no-repeat center center/ cover;
+}
+
+.mainSlide .itm03 {
+    background: url(../img/main_03.jpg) no-repeat center center/ cover;
+}
+
+.mainSlide .slick-dots {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.mainSlide .slick-dots li {
+    display: inline-block;
+    width: 100px;
+    height: 6px;
+    background: #fff;
+    border-radius: 3px;
+    margin: 0 3px;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.mainSlide .slick-dots li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #85058a;
+}
+
+.mainSlide .slick-dots li.slick-active::after {
+    width: 100%;
+    transition: 2s;
+}
+
+/* .mainSlide .slick-dots li.slick-active {
+    background: #f00;
+} */
+
+.mainSlide .slick-dots button {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
 
 .mainBanner .txt {
     text-align: center;
@@ -106,7 +174,18 @@ body {
     padding: 50px 0;
 }
 
+.mainBanner .pp .box {
+    width: 50%;
+}
+
+.mainBanner .pp .box img{
+    width: 100%;
+}
 .mainBanner .banner {
     width: 1200px;
     margin: 0 auto;
+}
+
+footer {
+    text-align: center;
 }
