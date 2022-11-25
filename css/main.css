@@ -210,11 +210,11 @@ body {
     padding: 50px 0;
 }
 
-.mainBanner .pp .box {
+.mainBanner .pp .sbox {
     width: 50%;
 }
 
-.mainBanner .pp .box img {
+.mainBanner .pp .sbox img {
     width: 100%;
 }
 
@@ -222,6 +222,31 @@ body {
     width: 1200px;
     margin: 0 auto;
 }
+
+.image .box {
+    position: relative;
+}
+
+.image .box::after {
+    content: attr(data-txt);
+    position: absolute;
+    top: -3%;
+    left: 50%;
+    width: 50px;
+    height: 1px;
+    background: #85058a;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10%;
+}
+
+
+
+
+
 
 footer {
     padding: 50px 0;
