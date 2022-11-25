@@ -8,17 +8,10 @@ body {
     margin: 0 auto;
 }
 
-.tit {
-    line-height: 1;
-}
 
 .flex {
     display: flex;
     flex-direction: row;
-}
-
-.sec {
-    padding: 100px 0;
 }
 
 .header {
@@ -100,13 +93,13 @@ body {
 
 .mainVisual .newInner {
     position: absolute;
-    top: 20%;
-    left: 50%;
+    top: 70%;
+    left: 45%;
     transform: translate(-50%, -50%);
 }
 
 .mainVisual .newInner h2 {
-    font-size: 80px;
+    font-size: 45px;
     font-weight: 700;
     color: #fff;
     /* text-indent: -4px; */
