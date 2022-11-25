@@ -92,7 +92,35 @@ body {
     border-top: 1px solid #ddd;
 }
 
-.mainSlide {
+.mainVisual {
+    position: relative;
+    height: 700px;
+    background: url(../img/main_01.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .newInner {
+    position: absolute;
+    top: 21%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+}
+
+.mainVisual .newInner h2 {
+    font-size: 80px;
+    font-weight: 700;
+    color: #fff;
+    /* text-indent: -4px; */
+    margin: 0 0 35px 0;
+}
+
+.mainVisual .newInner p {
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 25px;
+}
+
+/* .mainSlide {
     position: relative;
     width: 1200px;
     height: 700px;
@@ -114,7 +142,7 @@ body {
     font-size: 50px;
     font-weight: 700;
     color: #fff;
-    /* text-indent: -4px; */
+    text-indent: -4px;
     margin: 0 0 35px 0;
 }
 
@@ -175,13 +203,9 @@ body {
     transition: 2s;
 }
 
-/* .mainSlide .slick-dots li.slick-active {
-    background: #f00;
-} */
-
 .mainSlide .slick-dots button {
     display: none;
-}
+} */
 
 
 
@@ -191,10 +215,16 @@ body {
     text-align: center;
 }
 
-.mainBanner .txt h2 {
+.mainBanner .first h2 {
     font-size: 30px;
     font-weight: 300;
     margin: 100px 0 20px 0;
+}
+
+.mainBanner .second h2 {
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0 0 20px 0;
 }
 
 .mainBanner .txt p {
@@ -207,7 +237,20 @@ body {
     gap: 30px;
     margin: 0 auto;
     width: 1200px;
-    padding: 50px 0;
+    padding: 100px 0;
+}
+
+.mainBanner .second {
+    background: #f9f9f9;
+    padding: 100px 0;
+}
+
+.mainBanner .pp {
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+    width: 1200px;
+    padding: 100px 0 50px 0;
 }
 
 .mainBanner .pp .sbox {
@@ -227,7 +270,7 @@ body {
     position: relative;
 }
 
-.image .box::after {
+/* .image .box::after {
     content: attr(data-txt);
     position: absolute;
     top: -3%;
@@ -241,9 +284,7 @@ body {
     text-align: center;
     line-height: 50px;
     border-radius: 10%;
-}
-
-
+} */
 
 
 
@@ -251,7 +292,6 @@ body {
 footer {
     padding: 50px 0;
     text-align: center;
-    background: #f9f9f9;
 }
 
 .footer .list {
@@ -280,6 +320,6 @@ footer {
 }
 
 .footer address {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 14px;
 }
